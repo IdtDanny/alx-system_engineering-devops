@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -vR betty ./hello
+chown  betty ./hello
