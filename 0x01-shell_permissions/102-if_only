@@ -1,2 +1,2 @@
 #!/bin/bash
-chown betty -vR hello
+chown betty -vR guillaume hello
