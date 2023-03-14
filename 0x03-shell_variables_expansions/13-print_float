@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -n 4  $NUM
+echo $NUM | tail -n 2
