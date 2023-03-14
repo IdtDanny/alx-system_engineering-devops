@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $NUM | tail -n 2
+printf "%.2f\n" $NUM
