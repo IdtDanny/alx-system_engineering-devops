@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /etc/passwd | uniq
+grep "bin" /etc/passwd | less -l
