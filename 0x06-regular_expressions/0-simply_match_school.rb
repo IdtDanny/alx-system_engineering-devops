@@ -1,1 +1,2 @@
-Holberton
+#!/usr/bin/env ruby
+School
