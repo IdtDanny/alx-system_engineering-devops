@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script to ping IP address passed as argument 5 times:
+#+ Displays Usage: 5-is_the_host_on_the_network {IP_ADDRESS} if no argument passed
+
+if [ "$#" -eg 0 ];
