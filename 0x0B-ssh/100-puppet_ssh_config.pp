@@ -3,16 +3,12 @@
 
 file { 'etc/ssh/ssh_config':
 	ensure => present,
-}
 
-file_line { 'Turn off password auth':
-	path	=> '/etc/ssh/ssh_config',
-	line 	=> 'PasswordAuthentication no',
-	match	=> '^#PasswordAuthentication',
-}
+content =>"
 
-file_line { 'Declare identity file':
-	path	=> '/etc/ssh/ssh_config',
-	line	=> 'IentityFile ~/.ssh/school',
-	match	=> '^#IdentityFile',
+	#SSH client configuration
+	host*
+	IdentityFile ~/.ssh/school
+	PasswordAuthentication no
+	",
 }
